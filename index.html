@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 0;">
+    <form onsubmit="handleFormSubmit(event)">
+        <label>Choose ExpenseAmount</label>
+        <input type="text" name="ExpenseAmount" id="ExpenseAmount">
+
+        <label>Choose Description</label>
+        <input type="text" name="Description" id="Description">
+
+        <label for="category">Choose a Category</label>
+        <select name="category" id="category">
+            <option value="fuel">fuel</option>
+            <option value="food">food</option>
+            <option value="electricity">electricity</option>
+            <option value="movie">movie</option>
+        </select>
+        
+        <button type="submit">Add Expense</button>
+
+    </form>
+
+    <ul id="userList"></ul>
+</body>
+<script src="script.js"></script>
+</html>
